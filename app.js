@@ -1,6 +1,6 @@
- var auth = require("./auth.js");
+var auth = require("./auth.js");
 
-auth.getConnectionInfo().then((result) => {(username, password, dbname)
+auth.getConnectionInfo().then((result) => {
 
     var express = require("express");
     var app = express();
@@ -8,5 +8,11 @@ auth.getConnectionInfo().then((result) => {(username, password, dbname)
 
     var userController = require("./UserController");
     app.use("/users", userController);
-    module.exports = app(username, password, dbname);
+
+    try{
+        db.connectToDb(result.username, result.password, result.dbname);
+    }
+    catch(e){
+        console.trace(e);
+    }
 });
