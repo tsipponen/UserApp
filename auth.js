@@ -10,12 +10,6 @@ const readline = require('readline').createInterface({
     output: process.stdout
 });
 
-async function getConnectionInfo()
-{
-    username = await getUsername();
-    readline.close();
-}
-
 async function getUsername(){
     return new Promise((resolve, reject) => {
          readline.question('Enter your username: ', (username) => {
