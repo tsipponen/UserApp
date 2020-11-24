@@ -11,7 +11,6 @@ module.exports = {
             catch(e){
                 console.trace(e);
             }
-            return db;
         })
     }
 };

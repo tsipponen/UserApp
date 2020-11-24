@@ -7,7 +7,7 @@ var port = process.env.PORT || 3000;
 var userController = require("./UserController");
 app.use("/users", userController);
 
-connection.runApp().then((result) => {
+connection.runApp().then(() => {
   var server = app.listen(port, function (){
     console.log(`Express server listening on port ${port}.`)
   })
