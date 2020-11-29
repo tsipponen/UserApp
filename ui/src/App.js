@@ -1,32 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
       <div className="App">
       <header className="App-header">
-      <form className="credInputContainer1">
-      <span className="credInputContainer">
+      <h2>Welcome, {props.name}!</h2>
+      <form className="credInputContainer">
+      <span>
       <p className="credTitle">Username</p>
       <input className="credInput" type="text" id="username"/>
       </span>
-      <span className="credInputContainer">
+      <span>
       <p className="credTitle">Password</p>
       <input className="credInput" type="text" id="password"/>
+      </span>
+      <span>
+      <p className="credTitle">Database</p>
+      <input className="credInput" type="text" id="database"/>
       </span>
       </form>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
