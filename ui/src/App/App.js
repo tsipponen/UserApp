@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import CredInput from './CredInput.js'
 
 function App(props) {
   return (
@@ -29,10 +30,5 @@ function App(props) {
   );
 }
 
-function CredInput(props){
-  return(
-      <input className="CredInput" type="text" id={props.id}/>
-  );
-}
 
 export default App;
