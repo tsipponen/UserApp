@@ -9,15 +9,15 @@ function App(props) {
       <form className="credInputContainer">
       <span>
       <p className="credTitle">Username</p>
-      <input className="credInput" type="text" id="username"/>
+      <CredInput id="username"/>
       </span>
       <span>
       <p className="credTitle">Password</p>
-      <input className="credInput" type="text" id="password"/>
+      <CredInput id="password"/>
       </span>
       <span>
       <p className="credTitle">Database</p>
-      <input className="credInput" type="text" id="database"/>
+      <CredInput id="database"/>
       </span>
       </form>
         <img src={logo} className="App-logo" alt="logo" />
@@ -26,6 +26,12 @@ function App(props) {
         </p>
       </header>
     </div>
+  );
+}
+
+function CredInput(props){
+  return(
+      <input className="CredInput" type="text" id={props.id}/>
   );
 }
 
