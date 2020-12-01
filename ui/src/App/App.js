@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './styles.css';
 import CredInput from './CredInput.js'
 
+function sayLol(){
+  console.log("lol");
+}
+
 function App(props) {
   return (
       <div className="App">
@@ -21,14 +25,13 @@ function App(props) {
       <CredInput id="database"/>
       </span>
       </form>
+      <form className="buttonContainer">
+      <button className="submit" onClick={sayLol}>Connect</button>
+      </form>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
       </header>
     </div>
   );
 }
-
 
 export default App;

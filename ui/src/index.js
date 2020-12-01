@@ -5,10 +5,12 @@ import App from './App/App';
 import reportWebVitals from './reportWebVitals';
 
 const tiny = <App name = "Tiny"/>;
+let a;
 
 ReactDOM.render(
   tiny,
-  document.getElementById('root')
+  a = document.getElementById('root'),
+  console.log(a)
 );
 
 // If you want to start measuring performance in your app, pass a function
