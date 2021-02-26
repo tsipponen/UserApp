@@ -25,7 +25,7 @@ function App(props) {
       <form className="buttonContainer">
 
 
-      <Button username = "asd" password = "passu" db = "daattabase" />
+      <Button username = "asd" password = "passu" db = "daattabase"/>
 
 
       </form>
