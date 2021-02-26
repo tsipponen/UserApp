@@ -1,10 +1,7 @@
 import logo from './logo.svg';
 import './styles.css';
 import CredInput from './CredInput.js'
-
-function sayLol(){
-  console.log("lol");
-}
+import Button from './Button.js'
 
 function App(props) {
   return (
@@ -26,7 +23,11 @@ function App(props) {
       </span>
       </form>
       <form className="buttonContainer">
-      <button className="submit" onClick={sayLol}>Connect</button>
+
+
+      <Button username = "asd" password = "passu" db = "daattabase" />
+
+
       </form>
         <img src={logo} className="App-logo" alt="logo" />
       </header>
